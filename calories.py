@@ -1,6 +1,9 @@
 import streamlit as st
 import numpy as np
 import pickle
+import sklearn
+import pandas as pd
+from xgboost import XGBRegressor
 
 # Load the model
 loaded_model = pickle.load(open('trained_calories_model.pkl', 'rb'))
